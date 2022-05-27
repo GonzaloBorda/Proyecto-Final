@@ -6,41 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SublimeX | Sublimaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./sty/estilos.css">
     <link rel="shortcut icon" href="./img/favicom.ico.png">
 </head>
-<!--Comentario para guardar rama featured-->
+
 <body>
     <div class="grid">
-        <header>
-            <div class="dleft">
-                <a href="./index.html"><img src="./img/favicom.ico.png" alt="Logo..."></a>
-            </div>
-            <!--La clase "listrow" esta activa para las listas que sean en la forma ya nombrada, ROW-->
-            <div class="listrow">
-                <nav>
-                    <button class="hamburguesa">Menú</button>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Inicio</a>
+        <nav class="navbar navbar-expand-lg bg-propio">
+            <div class="container d-flex flex-row">
+                <a class="navbar-brand" href="#"><b>SUBLIMEX</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
                         </li>
-                        <li>
-                            <a href="./pag/galeria.html">Galería</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/galeria.html">Galería</a>
                         </li>
-                        <li>
-                            <a href="./pag/lavado.html">Lavado</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/lavado.html">Lavado</a>
                         </li>
-                        <li>
-                            <a href="./pag/nosotros.html">Nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/nosotros.html">Nosotros</a>
                         </li>
-                        <li>
-                            <a href="./pag/contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pag/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </header>
-        <main>
+        </nav>
+
+        <header>
             <div class="presentacion">
                 <h1 class="scale-up-center">Podes elegir cualquier tipo de diseño!</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint, dicta laboriosam incidunt
@@ -56,7 +60,8 @@
                     Sunt
                     nobis autem aspernatur magni!</p>
             </div>
-            <br>
+        </header>
+        <main>
             <div class="presentacion">
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, vitae!</h3>
             </div>
@@ -77,9 +82,37 @@
             </div>
             <br>
             <div class="botoncontacto">
-                <a href="contacto.html"><input type="button" value="CONTACTAR YA!"></a>
+                <a href="pag/contacto.html"><input class="btn btn-outline-danger" type="button"
+                        value="CONTACTAR YA!"></a>
             </div>
             <br>
+            <div class="d-flex flew-wrap justify-content-around">
+                <div class="card" style="width: 20rem;">
+                    <img src="./img/barbijos.jpg" class="card-img-top" alt="imagen...">
+                    <div class="card-body">
+                        <h5 class="card-title">Barbijos</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
+                        <a href="/pag/galeria.html" class="btn btn-primary">Ir allí!</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="./img/plotter.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Información</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
+                        <a href="/pag/nosotros.html" class="btn btn-primary">Ir allí!</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="./img/banderine.jpg" class="card-img-top" alt="imagen...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banderines</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
+                        <a href="/pag/galeria.html" class="btn btn-primary">Ir allí!</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </main>
         <footer>
             <div class="contenedorfoot">
@@ -106,6 +139,12 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
