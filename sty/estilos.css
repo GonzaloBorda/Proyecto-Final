@@ -22,6 +22,7 @@ body {
     background-image: radial-gradient(#444cf7 0.3125rem, transparent 0.3125rem), radial-gradient(#444cf7 0.3125rem, #2D4F92 0.3125rem);
     background-size: 1, 25rem 1, 25rem;
     background-position: 0 0, 0, 625rem 0, 625rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* START - Principio del F O O T E R */
@@ -96,6 +97,7 @@ footer {
 
 .presentacion {
     font-family: 'Oswald', sans-serif;
+    margin-top: 2rem;
 }
 
 .presentacion h1 {
@@ -109,6 +111,13 @@ footer {
 
 .presentacion h3 {
     text-align: center;
+}
+
+.presentacion p a {
+    color: #ff0000;
+}
+.presentacion p a:hover{
+    color: #fff;
 }
 
 .galeriamenu {
@@ -152,6 +161,7 @@ footer {
 .nosotrosmenu {
     display: flex;
     justify-content: center;
+    margin: 3rem;
 }
 
 .nosotrosmenu img {
@@ -267,46 +277,19 @@ Esto habia sido con flex.
 
 /* START - Principio de L A V A D O */
 
+
+.aquiw{
+    color: #f00;
+}
+.aquiw:hover{
+    color: #fff;
+}
+
 .proceso {
     font-family: 'Oswald', sans-serif;
-    width: 95%;
+    width: 90%;
     max-width: 100%;
     margin: 1rem auto;
-    border: solid #000;
-    background-color: #ffffff;
-    background-image: radial-gradient(#bdbdbd 0, 028125rem, transparent 0, 028125rem), radial-gradient(#bdbdbd 0, 028125rem, #ffffff 0, 028125rem);
-    background-size: 1, 125rem 1, 125rem;
-    background-position: 0 0, 0, 5625rem;
-}
-
-.proceso ul li {
-    margin-left: 3, 125rem;
-}
-
-.proceso h3 {
-    font-size: 3rem;
-}
-
-.proceso li {
-    font-size: 1.3rem;
-}
-
-.proceso__titulo {
-    text-align: center;
-    font-size: 4rem;
-    font-style: oblique;
-}
-
-.proceso__lavado__1 {
-    padding: 4rem;
-}
-
-.proceso__lavado__2 {
-    padding: 4rem;
-}
-
-.proceso__lavado__3 {
-    padding: 4rem;
 }
 
 /* END - Fin de L A V A D O */

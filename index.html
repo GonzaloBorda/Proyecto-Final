@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SublimeX | Sublimaciones</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./sty/estilos.css">
@@ -14,56 +15,44 @@
 
 <body>
     <div class="grid">
-        <nav class="navbar navbar-expand-lg bg-propio">
-            <div class="container d-flex flex-row">
-                <a class="navbar-brand" href="#"><b>SUBLIMEX</b></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pag/galeria.html">Galería</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pag/lavado.html">Lavado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pag/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pag/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <header>
-            <div class="presentacion">
-                <h1 class="scale-up-center">Podes elegir cualquier tipo de diseño!</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint, dicta laboriosam incidunt
-                    sit
-                    impedit similique recusandae veniam laudantium doloribus autem, nemo quaerat aperiam nesciunt illum
-                    natus dolor doloremque? Autem aliquid excepturi doloremque nisi voluptatibus? Ex omnis et
-                    exercitationem
-                    laboriosam dicta cum odio iure quisquam eum voluptatibus explicabo nobis dolore ipsum beatae minus
-                    deleniti error debitis, asperiores vitae ut eius nihil vero. Impedit facere, provident enim nesciunt
-                    quia dolorum corporis deleniti sunt. Error quae expedita aliquam itaque eligendi amet nobis ratione
-                    eius
-                    voluptates, illo fugit minus sint nesciunt a molestiae temporibus dolores libero, dolore accusamus.
-                    Sunt
-                    nobis autem aspernatur magni!</p>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-propio">
+                <div data-aos="fade-down" class="container d-flex flex-row">
+                    <a class="navbar-brand" href="index.html"><b>SUBLIMEX</b></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pag/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pag/lavado.html">Lavado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pag/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pag/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
+            <div data-aos="fade-right" class="presentacion">
+                <h1 class="scale-up-center">Podes elegir cualquier tipo de diseño!</h1>
+                <p>En <b>Sublimex</b> te ofrecemos lo mejor en diseño, color y calidad. Tenemos una amplia variedad, entre ellas, poseemos de banderas; telones; capas; barbijos y vestimenta en general. Solamente tiene que ir a nuestra sección de <a href="pag/contacto.html">contacto</a> para informar a nuestro equipo que es lo que precisa. Nuetsra atención es la mejor pretendida y el tiempo de entrega es la más veloz, qué esperas para seguir explorando!</p>
+            </div>
             <div class="presentacion">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, vitae!</h3>
+                <h3>Algunas imágenes para ilustrar un poco de nuestro contenido!</h3>
             </div>
             <br>
             <div class="galeriamenu">
@@ -88,27 +77,27 @@
             <br>
             <div class="d-flex flew-wrap justify-content-around">
                 <div class="card" style="width: 20rem;">
-                    <img src="./img/barbijos.jpg" class="card-img-top" alt="imagen...">
+                    <img src="img/barbijos.jpg" class="card-img-top" alt="imagen...">
                     <div class="card-body">
                         <h5 class="card-title">Barbijos</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
-                        <a href="/pag/galeria.html" class="btn btn-primary">Ir allí!</a>
+                        <p class="card-text">También tenemos amplia varidad en todo lo que sea barbijos, tenemos diferentes tipos y también son perzonalizables, que esperas?</p>
+                        <a href="pag/galeria.html" class="btn btn-primary">Ir allí!</a>
                     </div>
                 </div>
                 <div class="card" style="width: 20rem;">
-                    <img src="./img/plotter.jpg" class="card-img-top" alt="...">
+                    <img src="img/plotter.jpg" class="card-img-top" alt="imágen...">
                     <div class="card-body">
                         <h5 class="card-title">Información</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
-                        <a href="/pag/nosotros.html" class="btn btn-primary">Ir allí!</a>
+                        <p class="card-text">Esta es una de nuestras máquinas, la plotter. Quieres saber todo sobre nuestras maquinarias y nuestro equipo?</p>
+                        <a href="pag/nosotros.html" class="btn btn-primary">Ir allí!</a>
                     </div>
                 </div>
                 <div class="card" style="width: 20rem;">
-                    <img src="./img/banderine.jpg" class="card-img-top" alt="imagen...">
+                    <img src="img/banderine.jpg" class="card-img-top" alt="imagen...">
                     <div class="card-body">
                         <h5 class="card-title">Banderines</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!</p>
-                        <a href="/pag/galeria.html" class="btn btn-primary">Ir allí!</a>
+                        <p class="card-text">También tenemos amplia varidad en todo lo que sea banderines tenemos diferentes tipos y también son perzonalizables, que esperas?</p>
+                        <a href="pag/galeria.html" class="btn btn-primary">Ir allí!</a>
                     </div>
                 </div>
             </div>
@@ -145,6 +134,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
