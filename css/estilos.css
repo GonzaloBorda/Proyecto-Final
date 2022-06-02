@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* MediaQuery */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@media screen and (max-width: 768px) {
+  .listrow nav ul {
+    display: none;
+  }
+  .hamburguesa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.625rem;
+    margin: 1rem;
+    background-color: #2D4F92;
+    border: solid #000;
+    color: #fff;
+  }
+  .hamburguesa:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid #2D4F92;
+  }
+}
+
+/* font-family: 'Oswald', sans-serif; */
+/* Variables*/
+/* START - Universales */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.grid header .bg-propio {
+  background-color: rgba(45, 103, 226, 0.925) !important;
+}
+
+body {
+  background-color: #2D4F92;
+  background-image: radial-gradient(#444cf7 0.3125rem, transparent 0.3125rem), radial-gradient(#444cf7 0.3125rem, #2D4F92 0.3125rem);
+  background-size: 1, 25rem 1, 25rem;
+  background-position: 0 0, 0, 625rem 0, 625rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/* START - Principio del F O O T E R */
+footer {
+  background-color: #000;
+  height: auto;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+footer .contenedorfoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contenedorfoot .derechos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+/* START - Principio del H E A D E R */
+.dleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dleft a img {
+  width: 6rem;
+  height: 6rem;
+  background-size: contain;
+}
+
+/* START - Esto va a ser predeterminado para LISTAS ROW */
+.listrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0, 625rem;
+  padding: 0, 625rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+}
+
+.listrow ul li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 1rem;
+}
+
+.listrow a {
+  text-decoration: none;
+  color: #000;
+}
+
+.listrow a:hover {
+  color: #000ff0;
+}
+
+/* START - Principio de I N I C I O */
+.presentacion {
+  font-family: "Oswald", sans-serif;
+  margin-top: 2rem;
+}
+
+.presentacion h1 {
+  text-align: center;
+}
+
+.presentacion h3 {
+  text-align: center;
+}
+
+.presentacion p {
+  text-align: justify;
+  margin: 2rem;
+}
+
+.presentacion p a {
+  color: #ff0000;
+}
+
+.presentacion p a:hover {
+  color: #fff;
+}
+
+.galeriamenu {
+  border: solid #000;
+  width: 70%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  height: auto;
+}
+
+.galeriamenu img {
+  width: 100%;
+  height: 18, 75rem;
+  background-size: contain;
+}
+
+.botoncontacto {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.botoncontacto a input {
+  padding: 1rem;
+  color: #000;
+  background-color: #444cf7;
+}
+
+.botoncontacto a input:hover {
+  background-color: red;
+  color: white;
+}
+
+/* START - Este será el menu principal de N O S O T R O S */
+.nosotrosmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem;
+}
+
+.nosotrosmenu img {
+  background-size: cover;
+  width: 80%;
+  margin: 1, 875rem;
+}
+
+.textomenu {
+  text-align: center;
+  text-align: justify;
+  margin: 1rem;
+  padding: 0, 625rem;
+}
+
+.textomenu h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* START - Principio de C O N T A C T O */
+.divcontacto {
+  margin: 2.5rem;
+}
+
+.contacto {
+  background-color: #ffffff;
+  background-image: radial-gradient(#bdbdbd 0, 28125rem, transparent 0, 28125rem), radial-gradient(#bdbdbd 0, 28125rem, #ffffff 0, 28125rem);
+  background-size: 1, 125rem 1, 125rem;
+  background-position: 0 0, 0, 5625rem 0, 5625rem;
+  border: solid #000;
+  width: 80%;
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.contacto__texto {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin: 0, 8rem;
+}
+
+.contacto__int {
+  font-family: "Oswald", sans-serif;
+  padding: 0, 5rem;
+  margin: 0.2rem;
+}
+
+.contacto__int__bot {
+  font-family: "Oswald", sans-serif;
+  padding: 0, 1875rem;
+  margin: 0.2rem;
+  background-color: #2D4F92;
+}
+
+.contacto__int__bot:hover {
+  color: white;
+}
+
+/* No pude cambiar el formulario porque se me rompía */
+/* START - principio de G A L E R Í A */
+.menugaleria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menugaleria .titulogaleria {
+  font-size: 3rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.menugaleria .galeria {
+  width: 80%;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 0.625rem;
+  margin: 0 auto;
+}
+
+.menugaleria .galeria img {
+  width: 13rem;
+  height: 14rem;
+}
+
+/* STAR - L A V A D O*/
+.aquiw {
+  color: #f00;
+}
+
+.aquiw:hover {
+  color: #fff;
+}
+
+.proceso {
+  font-family: "Oswald", sans-serif;
+  width: 90%;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+/*# sourceMappingURL=estilos.css.map */
