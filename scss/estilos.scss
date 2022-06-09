@@ -5,6 +5,24 @@
 /* Variables*/
 $oswald: 'Oswald', sans-serif;
 
+/* Acá agrego mixin para configuración de flex */
+@mixin flexible($direction, $justify, $align){
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* Acá estoy agregando mapas*/
+$utilidades: (
+    titulo: #fff,
+);
+@each $utilidad, $color in $utilidades{
+    .#{$utilidad}var{
+        color: $color;
+    }
+}
+
+
 /* START - Universales */
 * {
     box-sizing: border-box;
@@ -42,11 +60,11 @@ footer {
 
     .contenedorfoot {
         display: flex;
-        justify-content: space-between;
+        @include flexible(row,space-between,center);
 
         .derechos {
             display: flex;
-            align-items: center;
+            @include flexible(row,center,center);
             padding: 1rem;
         }
     }
@@ -55,7 +73,7 @@ footer {
 /* START - Principio del H E A D E R */
 .dleft {
     display: flex;
-    align-items: center;
+    @include flexible(row,center,center);
 
     a img {
         width: 6rem;
@@ -67,7 +85,7 @@ footer {
 /* START - Esto va a ser predeterminado para LISTAS ROW */
 .listrow {
     display: flex;
-    align-items: center;
+    @include flexible(row,center,center);
     margin: 0, 625rem;
     padding: 0, 625rem;
     font-family: $oswald;
@@ -99,7 +117,7 @@ footer {
     }
 
     h3 {
-        text-align: center;
+        @extend h1;
     }
 
     p {
@@ -151,7 +169,7 @@ footer {
 /* START - Este será el menu principal de N O S O T R O S */
 .nosotrosmenu {
     display: flex;
-    justify-content: center;
+    @include flexible(row,center,center); 
     margin: 3rem;
 
     img {
@@ -205,9 +223,8 @@ footer {
 }
 
 .contacto__int__bot {
-    font-family: $oswald;
+    @extend .contacto__int;
     padding: 0, 1875rem;
-    margin: 0.2rem;
     background-color: #2D4F92;
 }
 
@@ -221,8 +238,7 @@ footer {
 /* START - principio de G A L E R Í A */
 .menugaleria {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexible(column,center,stretch);
 
     .titulogaleria {
         font-size: 3rem;

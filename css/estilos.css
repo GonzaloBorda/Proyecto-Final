@@ -24,6 +24,12 @@
 
 /* font-family: 'Oswald', sans-serif; */
 /* Variables*/
+/* Acá agrego mixin para configuración de flex */
+/* Acá estoy agregando mapas*/
+.titulovar {
+  color: #fff;
+}
+
 /* START - Universales */
 * {
   -webkit-box-sizing: border-box;
@@ -66,15 +72,29 @@ footer .contenedorfoot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .contenedorfoot .derechos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -86,6 +106,13 @@ footer .contenedorfoot .derechos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -102,6 +129,13 @@ footer .contenedorfoot .derechos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -134,11 +168,7 @@ footer .contenedorfoot .derechos {
   margin-top: 2rem;
 }
 
-.presentacion h1 {
-  text-align: center;
-}
-
-.presentacion h3 {
+.presentacion h1, .presentacion h3 {
   text-align: center;
 }
 
@@ -194,9 +224,16 @@ footer .contenedorfoot .derechos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 3rem;
 }
 
@@ -243,16 +280,14 @@ footer .contenedorfoot .derechos {
   margin: 0, 8rem;
 }
 
-.contacto__int {
+.contacto__int, .contacto__int__bot {
   font-family: "Oswald", sans-serif;
   padding: 0, 5rem;
   margin: 0.2rem;
 }
 
 .contacto__int__bot {
-  font-family: "Oswald", sans-serif;
   padding: 0, 1875rem;
-  margin: 0.2rem;
   background-color: #2D4F92;
 }
 
@@ -273,6 +308,9 @@ footer .contenedorfoot .derechos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .menugaleria .titulogaleria {
